@@ -12,3 +12,11 @@ function createGrid(num) {
 }
 
 createGrid(16);
+
+const grid = document.querySelectorAll(".cell");
+
+grid.forEach((cell) => {
+  cell.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor = "orange";
+  })
+});
