@@ -1,0 +1,7 @@
+#sketch-pad {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 1px;
+  height: 960px;
+  width: 960px;
+}
