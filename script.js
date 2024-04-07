@@ -6,17 +6,41 @@ function createGrid(num) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
     cell.setAttribute("style", `hight: ${size}px; width: ${size}px`);
-    cell.textContent = `${i + 1}`;
+    // cell.textContent = `${i + 1}`;
     sketchPad.appendChild(cell);
   }
 }
 
-createGrid(16);
+function activateGrid() {
+  const grid = document.querySelectorAll(".cell");
+  grid.forEach((cell) => {
+    cell.addEventListener("mouseover", (event) => {
+      event.target.style.backgroundColor = "orange";
+    });
+  });
+}
 
-const grid = document.querySelectorAll(".cell");
-
-grid.forEach((cell) => {
-  cell.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = "orange";
+function removeGrid() {
+  const sketchPad = document.querySelector("#sketch-pad");
+  const grid = document.querySelectorAll(".cell");
+  grid.forEach((cell) => {
+    sketchPad.removeChild(cell);
   })
-});
+}
+
+function promptUser() {
+  num = Number(window.prompt("Number of squares per side of the grid:", "16"));
+  if (num > 100) {
+    window.alert("ERROR: The maximum is 100.");
+  } else {
+    removeGrid();
+    createGrid(num);
+    activateGrid();
+  }  
+}
+
+createGrid(16);
+activateGrid();
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", promptUser);
