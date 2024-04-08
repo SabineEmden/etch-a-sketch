@@ -6,13 +6,16 @@ Assignment: [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foun
 
 The page shows a sketch pad with an invisible grid of square cells. The cells change color when the mouse is moved over them, leaving a (pixelated) trail through the grid.
 
-The page loads with a 16x16 grid. When the user clicks a button above the grid, they are asked for the number of squares per side for a new grid. After the number is entered, the existing grid is removed and a new grid is generated in the same total space as before. 
+The page loads with a 16x16 grid. When the user clicks a button above the grid, they are asked for the number of squares per side for a new grid. After the number is entered, the existing grid is removed and a new grid is generated in the same total space as before.
+
+## Extra credit
+If the checkbox "random color" is checked, rather than the cells changing to the same color throughout the grid, the color is randomized with each interaction.
 
 ### Skills used:
  - JavaScript basics: DOM manipulation and events
  - JavaScript basics: variables, operators, data types, conditionals, function basics, loops
  - HTML and CSS basics
- - version control with git
- - sharing code on GitHub
- - deployment on GitHub Pages
- - command line basics for file management and version control
+ - Version control with git
+ - Sharing code on GitHub
+ - Deployment on GitHub Pages
+ - Command line basics for file management and version control
