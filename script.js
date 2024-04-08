@@ -20,9 +20,14 @@ function getRandomColor() {
 
 function activateGrid() {
   const grid = document.querySelectorAll(".cell");
+  const random = document.querySelector("#random");
   grid.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
-      event.target.style.backgroundColor = getRandomColor();
+      if (random.checked == true) {
+        event.target.style.backgroundColor = getRandomColor();
+      } else {
+        event.target.style.backgroundColor = "orange";
+      }   
     });
   });
 }
