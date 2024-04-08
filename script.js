@@ -11,11 +11,18 @@ function createGrid(num) {
   }
 }
 
+function getRandomColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  return `rgb(${red} ${green} ${blue})`;
+}
+
 function activateGrid() {
   const grid = document.querySelectorAll(".cell");
   grid.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
-      event.target.style.backgroundColor = "orange";
+      event.target.style.backgroundColor = getRandomColor();
     });
   });
 }
