@@ -1,8 +1,13 @@
 #sketch-pad {
   display: flex;
   flex-wrap: wrap;
+  background-color: black;
   border: solid black 1px;
   height: 960px;
   width: 960px;
   margin-top: 8px;
+}
+
+.cell {
+  background-color: white;
 }
