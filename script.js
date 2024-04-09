@@ -27,7 +27,14 @@ function activateGrid() {
         event.target.style.backgroundColor = getRandomColor();
       } else {
         event.target.style.backgroundColor = "orange";
-      }   
+      }
+      let opacityValue = parseFloat(event.target.style.opacity || 2);
+      if (opacityValue == 2) {
+        event.target.style.opacity = "1";
+      } else {
+        opacityValue = opacityValue - 0.1;
+        event.target.style.opacity = opacityValue.toString();
+      }
     });
   });
 }
