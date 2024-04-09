@@ -18,6 +18,16 @@ function getRandomColor() {
   return `rgb(${red} ${green} ${blue})`;
 }
 
+function reduceOpacity(element) {
+  let opacityValue = parseFloat(element.target.style.opacity || 2);
+      if (opacityValue == 2) {
+        element.target.style.opacity = "1";
+      } else {
+        opacityValue = opacityValue - 0.1;
+        element.target.style.opacity = opacityValue.toString();
+      }
+}
+
 function activateGrid() {
   const grid = document.querySelectorAll(".cell");
   const random = document.querySelector("#random");
@@ -28,13 +38,7 @@ function activateGrid() {
       } else {
         event.target.style.backgroundColor = "orange";
       }
-      let opacityValue = parseFloat(event.target.style.opacity || 2);
-      if (opacityValue == 2) {
-        event.target.style.opacity = "1";
-      } else {
-        opacityValue = opacityValue - 0.1;
-        event.target.style.opacity = opacityValue.toString();
-      }
+      reduceOpacity(event);
     });
   });
 }
