@@ -11,3 +11,9 @@
 .cell {
   background-color: white;
 }
+
+#settings {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

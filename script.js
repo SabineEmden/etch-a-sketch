@@ -6,7 +6,6 @@ function createGrid(num) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
     cell.setAttribute("style", `hight: ${size}px; width: ${size}px`);
-    // cell.textContent = `${i + 1}`;
     sketchPad.appendChild(cell);
   }
 }
