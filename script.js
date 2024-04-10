@@ -31,6 +31,7 @@ function reduceOpacity(element) {
 function activateGrid() {
   const grid = document.querySelectorAll(".cell");
   const random = document.querySelector("#random");
+  const darkening = document.querySelector("#darkening");
   grid.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
       if (random.checked == true) {
@@ -38,7 +39,7 @@ function activateGrid() {
       } else {
         event.target.style.backgroundColor = "orange";
       }
-      reduceOpacity(event);
+      if (darkening.checked ==true) reduceOpacity(event);
     });
   });
 }
