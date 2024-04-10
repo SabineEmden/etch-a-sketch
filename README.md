@@ -4,12 +4,13 @@ This project for JavaScript Basics in the Foundations Course of The Odin Project
 
 Assignment: [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
-The page shows a sketch pad with an invisible grid of square cells. The cells change color when the mouse is moved over them, leaving a (pixelated) trail through the grid.
+The page shows a sketch pad with an invisible grid of square cells. The cells change color from white to orange when the mouse is moved over them, leaving a (pixelated) trail through the grid.
 
 The page loads with a 16x16 grid. When the user clicks a button above the grid, they are asked for the number of squares per side for a new grid. After the number is entered, the existing grid is removed and a new grid is generated in the same total space as before.
 
 ## Extra credit
-If the checkbox "random color" is checked, rather than the cells changing to the same color throughout the grid, the color is randomized with each interaction.
+1. If the checkbox "random color" is checked, rather than the cells changing to the same color throughout the grid, the color is randomized with each interaction.
+2. If the checkbox "progressive darkening" is checked, a cell changes color from white to orange or to a random color on the first interaction with the mouse. Over the next ten interactions with the mouse, the cell progressively darkens until it is black.
 
 ### Skills used:
  - JavaScript basics: DOM manipulation and events
