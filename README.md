@@ -12,7 +12,7 @@ The page loads with a 16x16 grid. When the user clicks a button above the grid, 
 1. If the checkbox "random color" is checked, rather than the cells changing to the same color throughout the grid, the color is randomized with each interaction.
 2. If the checkbox "progressive darkening" is checked, a cell changes color from white to orange or to a random color on the first interaction with the mouse. Over the next ten interactions with the mouse, the cell progressively darkens until it is black.
 
-### Skills used:
+## Skills used:
  - JavaScript basics: DOM manipulation and events
  - JavaScript basics: variables, operators, data types, conditionals, function basics, loops
  - HTML and CSS basics
@@ -20,3 +20,7 @@ The page loads with a 16x16 grid. When the user clicks a button above the grid, 
  - Sharing code on GitHub
  - Deployment on GitHub Pages
  - Command line basics for file management and version control
+
+## Acknowledgement
+ This line of code in Andrea Bertos' [repo](https://github.com/Tussis88/Etch-A-Sketch) was the essential clue I needed to implement the progressive darkening effect:
+ `let opacityValue = parseFloat(pixel.target.style.opacity || 0);`
