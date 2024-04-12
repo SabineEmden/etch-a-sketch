@@ -14,7 +14,7 @@ The page loads with a 16x16 grid. When the user clicks a button above the grid, 
 
 ## Skills used:
  - JavaScript basics: DOM manipulation and events
- - JavaScript basics: variables, operators, data types, conditionals, function basics, loops
+ - JavaScript basics: variables, operators, data types, conditionals, function basics, loops, debugging with Chrome DevTools
  - HTML and CSS basics
  - Version control with git
  - Sharing code on GitHub
@@ -22,5 +22,7 @@ The page loads with a 16x16 grid. When the user clicks a button above the grid, 
  - Command line basics for file management and version control
 
 ## Acknowledgement
- This line of code in Andrea Bertos' [repo](https://github.com/Tussis88/Etch-A-Sketch) was the essential clue I needed to implement the progressive darkening effect:
+ This line of code in Andrea Bertos' [Etch-A-Sketch solution](https://github.com/Tussis88/Etch-A-Sketch) was the essential clue I needed to implement a first version of the progressive darkening effect:
  `let opacityValue = parseFloat(pixel.target.style.opacity || 0);`
+
+ After I found Andrea's code, it took me two more days to come up with me own solution for the progressive darkening effect.
