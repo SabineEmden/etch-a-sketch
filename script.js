@@ -17,14 +17,14 @@ function getRandomColor() {
   return `rgb(${red} ${green} ${blue})`;
 }
 
-function reduceOpacity(element) {
-  let opacityValue = parseFloat(element.target.style.opacity || 2);
-      if (opacityValue == 2) {
-        element.target.style.opacity = "1";
-      } else {
-        opacityValue = opacityValue - 0.1;
-        element.target.style.opacity = opacityValue.toString();
-      }
+function reduceOpacity(event) {
+  let opacityValue = event.target.style.opacity;
+  if (opacityValue === "") {
+    event.target.style.opacity = "1";
+  } else if (opacityValue > 0) {
+    opacityValue = Number(opacityValue) - 0.1;
+    event.target.style.opacity = opacityValue.toString();
+  }
 }
 
 function activateGrid() {
